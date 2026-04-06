@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="">
     <meta name="viewport" content="width=, user-scalable=, initial-scale=, maximum-scale=, minimum-scale=">
@@ -21,10 +21,10 @@
                         <a class="nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Category</a>
+                        <a class="nav-link" href="#category">Category</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">AboutMe</a>
+                        <a class="nav-link" href="#Hero">AboutMe</a>
                     </li>
                     <li class="nav-item">
                         <img src="img/Icon(1).svg" alt="search-image" class="search-icon">
@@ -33,7 +33,6 @@
                     <li class="nav-item">
                         <button class="nav-button" type="button">
                             <img src="img/simple-icons_buymeacoffee.svg" alt="buy_me_a_coffee">
-
                             Buy Me A Coffee</button>
                     </li>
                 </ul>
@@ -41,8 +40,11 @@
         </div>
     </header>
 </div>
-    <section class="hero">
-        <div class="hero-container">
+</div>
+<main>
+    <section class="hero" id="Hero">
+        <div class="container hero-flex">
+            <div class="hero-content">
             <div class="hero-title">
                 <h1>Hi, i'm Dasteen
                     Front end dev</h1>
@@ -51,15 +53,389 @@
                 <p>On this blog I share tips and tricks, frameworks, projects, tutorials, etc
                     Make sure you subscribe to get the latest updates</p>
             </div>
-            <div class="hero-form">
-                <input type="text" name="" id="" placeholder="Enter your email here....">
+                <form class="hero-form">
+                <input type="email" name="hero-form" placeholder="Enter your email here...." required>
                 <button type="submit">Subscribe</button>
-            </div>
+                </form>
         </div>
         <div class="hero-img">
-            <img src="img/learn-coding%201.png" alt="">
+            <img src="img/learn-coding%201.png" alt="Learn Coding">
+        </div>
         </div>
     </section>
-</div>
+
+<section class="category" id="category">
+    <div class="container">
+        <div class="category-container">
+            <div class="category__text-container">
+                <div class="category-title">
+                    <h3>Browse the category</h3>
+                </div>
+                <div class="category-text">
+                    <a href="#" class="category-text__link">See All Category <span class="see-all-row">&#10095;</span></a>
+                </div>
+            </div>
+            <div class="category__cards-container">
+                <ul class="category__cards-list">
+                    <li class="category__card">
+                        <img src="img/Frame%20298.png" alt="CSS">
+                        <a href="#CSS" class="category__card-text">CSS</a>
+                    </li>
+                    <li class="category__card">
+                        <img src="img/Frame%202981.svg" alt="Javascript">
+                        <a href="#Javascript" class="category__card-text">Javascript</a>
+                    </li>
+                    <li class="category__card" id="Tailwind">
+                        <img src="img/Frame%20298.svg" alt="Tailwind">
+                        <a href="#CSS" class="category__card-text">Tailwind</a>
+                    </li>
+                    <li class="category__card">
+                        <img src="img/Frame%202982.svg" alt="VueJS">
+                        <a href="#Javascript" class="category__card-text">Vue JS</a>
+                    </li>
+                    <li class="category__card">
+                        <img src="img/Frame%202983.svg" alt="React JS">
+                        <a href="#ReactJS" class="category__card-text">React JS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="articles-section" id="articles-section">
+    <div class="container">
+
+        <div class="article-group" id="featured-articles">
+            <div class="group-header">
+                <h2 class="group-title">Featured Article</h2>
+                <a href="#" class="see-all">See All Article <span class="see-all-row">&#10095;</span></a>
+            </div>
+            <div class="articles-grid">
+                <article class="article-card card--white">
+                    <div class="card-image">
+                        <img src="img/Article_Image.png" alt="JS">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fundamental Of Javascript</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info">
+                                <span class="author-name">Dasteen</span>
+                                <p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image1.png" alt="Grid">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Grid CSS make your life easier</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info">
+                                <span class="author-name">Dasteen</span>
+                                <p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image2.png" alt="Mode">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Make animated light mode and dark mode toggle with CSS</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info">
+                                <span class="author-name">Dasteen</span>
+                                <p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image3.png" alt="React">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Make tic tac toe games with react JS</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info">
+                                <span class="author-name">Dasteen</span>
+                                <p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="article-group" id="CSS">
+            <div class="group-header">
+                <h2 class="group-title">CSS</h2>
+                <a href="#" class="see-all">See All Article <span class="see-all-row">&#10095;</span></a>
+            </div>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image4.png" alt="Flexbox">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Flexbox CSS : Everything you need to know</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image1.png" alt="Grid">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Grid CSS make your life easier</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image5.png" alt="Center">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">3 easy way to make div center</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image2.png" alt="Toggle">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Make animated light mode and dark mode toggle with CSS</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="article-group" id="Javascript">
+            <div class="group-header">
+                <h2 class="group-title">Javascript</h2>
+                <a href="#" class="see-all">See All Article <span class="see-all-row">&#10095;</span></a>
+            </div>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/code.png" alt="Array">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Array in javasript - Learn JS #3</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image.png" alt="Fundamental">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Fundamental of javascript</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image6.png" alt="Projects">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">7 project with javascript you must try for portfolio</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image7.png" alt="Calc">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Make simple calculator with Javascript</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="article-group" id="ReactJS">
+            <div class="group-header">
+                <h2 class="group-title">React JS</h2>
+                <a href="#" class="see-all">See All Article <span class="see-all-row">&#10095;</span></a>
+            </div>
+            <div class="articles-grid">
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image8.png" alt="Month 1">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">First Month Of Leaning React JS</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image9.png" alt="Editor">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Build Markdown Editor With React JS</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image10.png" alt="Started">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Getting Started With React JS</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="card-image">
+                        <img src="img/Article_Image3.png" alt="Game">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Make Tic Tac Toe Games With React JS</h3>
+                        <div class="card-meta">
+                            <img src="img/Ellipse 80.png" alt="Dasteen" class="avatar">
+                            <div class="author-info"><span class="author-name">Dasteen</span><p class="author-details">Jan 10, 2022 <span>&#8226;</span> 3 Min Read</p></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <div class="more-btn-wrapper">
+            <button class="btn-more">More Article</button>
+        </div>
+    </div>
+</section>
+
+<section class="subscribe-section" id="subscribe-section">
+    <div class="container">
+        <div class="subscribe-content">
+            <div class="subscribe-icon">
+                <img src="img/Mask%20Group.svg" alt="Subscribe icon">
+            </div>
+
+            <h2 class="subscribe-title">Subscribe For The Lastest Updates</h2>
+            <p class="subscribe-subtitle">Subscribe to newsletter and never miss the new post every week.</p>
+
+            <form class="subscribe-form">
+                <input type="email" placeholder="Enter your email here...." required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="logo-container">
+                    <h3 class="logo">Dasteen</h3><span class="logo-blog">.blog</span>
+                </div>
+                <p class="footer-description">Digitaldastin by Dastin Darmawan</p>
+                <div class="social-links">
+                    <a href="https://medium.com/" target="_blank" rel="noopener noreferrer"><img src="img/Medium%20Monogram.svg" alt="Medium"></a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer"><img src="img/Vector.svg" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"><img src="img/instagram.svg" alt="Instagram"></a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Category</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item"><a href="#CSS">CSS</a></li>
+                    <li class="footer-item"><a href="#Javascript">Javascript</a></li>
+                    <li class="footer-item"><a href="#Tailwind">Tailwind</a></li>
+                    <li class="footer-item"><a href="#ReactJS">React JS</a></li>
+                    <li class="footer-item"><a href="#category">More Category</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">About Me</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item"><a href="#Hero">About Me</a></li>
+                    <li class="footer-item"><a href="#featured-articles">Projects</a></li>
+                    <li class="footer-item"><a href="#">Achievement</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Get In Touch</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item"><a href="tel:+628XXXXXXXXX">+62-8XXX-XXX-XX</a></li>
+                    <li class="footer-item"><a href="mailto:demo@gmail.com">demo@gmail.com</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Follow Us</h4>
+                <ul class="footer-menu">
+                    <li class="footer-item"><a href="https://medium.com/" target="_blank" rel="noopener noreferrer">Medium</a></li>
+                    <li class="footer-item"><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                    <li class="footer-item"><a href="https://x.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li class="footer-item"><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-bottom-text">&#169; 2025 Digitaldastin</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>
